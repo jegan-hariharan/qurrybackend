@@ -1,6 +1,6 @@
 pipeline { 
     environment { 
-        registry = "jegansanthosh/newrepo" 
+        registry = "jegansanthosh/backendq" 
         registryCredential = 'Dockerhub_jegan' 
        
     }
@@ -11,14 +11,14 @@ pipeline {
                   
         
                 sh 'docker build --network host -t qurrybackend:$BUILD_NUMBER .'
-                sh 'docker tag qurrybackend:$BUILD_NUMBER jegansanthosh/newrepo:$BUILD_NUMBER'
+                sh 'docker tag qurrybackend:$BUILD_NUMBER jegansanthosh/backendq:$BUILD_NUMBER'
             } 
         }
         stage('push our image') { 
             steps { 
                 script { 
                     docker.withRegistry( '', registryCredential ) { 
-                        sh 'docker push jegansanthosh/newrepo:$BUILD_NUMBER' 
+                        sh 'docker push jegansanthosh/backendq:$BUILD_NUMBER' 
                     }
                 } 
             }
