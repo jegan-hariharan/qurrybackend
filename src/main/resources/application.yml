@@ -1,0 +1,19 @@
+spring:
+
+  SMTP.mail:
+    host: email-smtp.eu-west-1.amazonaws.com
+    port: 587
+    username: AKIAQ2NQCPKSFHMHVCVH
+    password: BKs5PRPQFR/292ykc6DcKqc+9pOb9z/jelMCCV5F3dez
+
+  robot:
+      email:
+        from: blackswan.robot@gmail.com
+twilio:
+  account_sid : ACfc4bacafe435e4430cdc6b46db1db0e0
+  auth_token: 3bbe0720df0b3b48b1c2d5ba17feca70
+  trial_number: +15866660955
+#Mail Scheduling Config
+scheduling:
+  mail:
+    cron: 1 * * * * ?

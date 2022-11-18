@@ -1,0 +1,21 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fdc78df6291, pid=216207, tid=216222
+#
+# JRE version: OpenJDK Runtime Environment Zulu13.50+15-CA (13.0.12+4) (build 13.0.12+4-MTS)
+# Java VM: OpenJDK 64-Bit Server VM Zulu13.50+15-CA (13.0.12+4-MTS, mixed mode, sharing, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x4291]  ImageStrings::find(Endian*, char const*, int*, unsigned int)+0x71
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport -p%p -s%s -c%c -d%d -P%P -u%u -g%g -- %E" (or dumping to /home/datasirpi/quarry-backend/Quarry/core.216207)
+#
+# If you would like to submit a bug report, please visit:
+#   http://www.azul.com/support/
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=127.0.0.1:39847 -Dfile.encoding=UTF-8 -Duser.country=IN -Duser.language=en -Duser.variant com.quarry.management.QuarryApplication
+
+Host: 
